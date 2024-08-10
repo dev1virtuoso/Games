@@ -1,6 +1,6 @@
 # Repository for Games Project
 
-This GitHub repository serves as a central location for storing the code of my Games project. The project is licensed under the Mozilla Public License Version 2.0.
+This GitHub repository serves as a central location for storing the code of my games project. The project is licensed under the Mozilla Public License Version 2.0.
 
 ## License
 
@@ -14,7 +14,7 @@ This repository utilizes the MonoRepo approach, which involves integrating multi
 
 ## Getting Started
 
-To begin working with the Games project, follow these steps:
+To begin working with the games project, follow these steps:
 
 1. Clone the repository to your local machine:
 
@@ -30,7 +30,7 @@ To begin working with the Games project, follow these steps:
 
 ## Contribution Guidelines
 
-Contributions to this Games project are highly appreciated. If you wish to contribute, please adhere to the following guidelines:
+Contributions to this games project are highly appreciated. If you wish to contribute, please adhere to the following guidelines:
 
 - Fork the repository and create a new branch for your contributions.
 - Make your changes and thoroughly test them.
@@ -40,6 +40,6 @@ By contributing to this project, you agree to license your contributions under t
 
 ## Contact Information
 
-If you have any questions or suggestions regarding this Games project, please feel free to contact me at [carson.developer1125@gmail.com](mailto:carson.developer1125@gmail.com).
+If you have any questions or suggestions regarding this games project, please feel free to contact me at [carson.developer1125@gmail.com](mailto:carson.developer1125@gmail.com).
 
 Thank you for your interest and contributions to the project!
