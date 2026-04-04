@@ -1,13 +1,11 @@
 import random
 
-# Game settings
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 player = "X"
 computer = "O"
 winning_positions = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
 
 def draw_board():
-    # Draw the game board
     print("   |   |   ")
     print(" " + board[0] + " | " + board[1] + " | " + board[2] + " ")
     print("___|___|___")
@@ -19,14 +17,12 @@ def draw_board():
     print("   |   |   ")
 
 def get_player_move():
-    # Get the player's move
     move = input("Enter your move (1-9): ")
     while move not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"] or board[int(move)-1] != " ":
         move = input("Enter a valid move (1-9): ")
     return int(move) - 1
 
 def get_computer_move():
-    # Get the computer's move
     for i in range(9):
         if board[i] == " ":
             board[i] = computer
@@ -48,21 +44,18 @@ def get_computer_move():
             return move
 
 def check_win(symbol):
-    # Check for a winner
     for position in winning_positions:
         if board[position[0]] == symbol and board[position[1]] == symbol and board[position[2]] == symbol:
             return True
     return False
 
 def check_tie():
-    # Check if it's a tie
     for i in range(9):
         if board[i] == " ":
             return False
     return True
 
 def play_game():
-    # Game loop
     global board
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     while True:
@@ -87,5 +80,4 @@ def play_game():
             player = "X"
             computer = "O"
 
-# Start the game
 play_game()

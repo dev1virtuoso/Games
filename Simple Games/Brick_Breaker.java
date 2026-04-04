@@ -35,11 +35,9 @@ public class BrickBreaker extends JFrame implements ActionListener, KeyListener 
     }
 
     public void paint(Graphics g) {
-        // Background
         g.setColor(Color.black);
         g.fillRect(1, 1, 692, 592);
 
-        // Bricks
         for (int i = 0; i < brickRowCount; i++) {
             for (int j = 0; j < brickColumnCount; j++) {
                 if (bricks[i][j] == 1) {
@@ -49,15 +47,12 @@ public class BrickBreaker extends JFrame implements ActionListener, KeyListener 
             }
         }
 
-        // Paddle
         g.setColor(Color.green);
         g.fillRect(paddleX, 550, 100, 8);
 
-        // Ball
         g.setColor(Color.yellow);
         g.fillOval(ballPosX, ballPosY, 20, 20);
 
-        // Score
         g.setColor(Color.white);
         g.setFont(new Font("Arial", Font.BOLD, 25));
         g.drawString("Score: " + score, 10, 30);
